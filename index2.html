@@ -1,0 +1,173 @@
+<!doctype html> 
+<!--
+Copyright (C) 2018 Alkis Georgopoulos <alkisg@gmail.com>.
+SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<html lang="el"> 
+<head> 
+  <meta charset="UTF-8" />
+  <title>Ηχητική περιγραφή και νοερή εικόνα</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+/* Remove margins and HTML scrollbars */
+body, html  {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px 20px 0px 20px;
+    background: url('resource/background.svg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Style tab links */
+.tabs {
+    display: flex;
+    align-items: stretch;
+}
+
+.tablink {
+    flex-grow: 1;
+    border: none;
+    border-radius: 10px 10px 0px 0px;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin: 0px 2px 0px 2px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.tablink:hover {
+    background-color: #f0f0f0;
+}
+
+.tabcontent {
+    background-color: white;
+    border: 5px solid #e6e6e6;
+    border-radius: 10px;
+    clear: both;  /* Tabs float, content should go below */
+    overflow-y: scroll;
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    flex: 1;
+    height: 100%;
+}
+
+iframe {
+    overflow-y: scroll;
+	border: none;
+    height: 100%;
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+}
+
+.bar {
+    cursor: pointer;
+    border: 2px solid transparent;
+    vertical-align: middle;
+}
+
+.bar:hover {
+    border: 2px solid skyblue;
+}
+
+#Story { }
+#Paint { overflow: hidden; }
+#Result { }
+  </style>
+</head>
+
+<body>
+<div class="tabs">
+&nbsp;
+<a class="tablink" onclick="openPage('Story', this, 'red')">Περιγραφή</a>
+<a class="tablink" onclick="openPage('Paint', this, 'green')" id="defaultOpen">Ζωγραφική</a>
+<a class="tablink" onclick="openPage('Result', this, 'blue')">Αποτέλεσμα</a>
+&nbsp;
+</div>
+<div id="Story" class="tabcontent">
+<div style="background-color: white">
+  <p>Έχει σχήμα πατάτας.</p>
+  <p>Έχει δύο μάτια το ένα πάνω από το άλλο.</p>
+  <p>Έχει δύο πράσινες κεραίες.</p>
+  <p>Έχει πορτοκαλί χρώμα.</p>
+  <p>Χαμογελάει και φαίνονται τα δόντια του.</p>
+  <p>Δεν έχει μύτη ούτε αυτιά ούτε μαλλιά.</p>
+  <p>&nbsp;</p>
+  <p>Έχει σχήμα πατάτας.</p>
+  <p>Έχει δύο μάτια το ένα πάνω από το άλλο.</p>
+  <p>Έχει δύο πράσινες κεραίες.</p>
+  <p>Έχει πορτοκαλί χρώμα.</p>
+  <p>Χαμογελάει και φαίνονται τα δόντια του.</p>
+  <p>Δεν έχει μύτη ούτε αυτιά ούτε μαλλιά.</p>
+  <p>&nbsp;</p>
+  <p>Έχει σχήμα πατάτας.</p>
+  <p>Έχει δύο μάτια το ένα πάνω από το άλλο.</p>
+  <p>Έχει δύο πράσινες κεραίες.</p>
+  <p>Έχει πορτοκαλί χρώμα.</p>
+  <p>Χαμογελάει και φαίνονται τα δόντια του.</p>
+  <p>Δεν έχει μύτη ούτε αυτιά ούτε μαλλιά.</p>
+  <p>&nbsp;</p>
+  <p>Έχει σχήμα πατάτας.</p>
+  <p>Έχει δύο μάτια το ένα πάνω από το άλλο.</p>
+  <p>Έχει δύο πράσινες κεραίες.</p>
+  <p>Έχει πορτοκαλί χρώμα.</p>
+  <p>Χαμογελάει και φαίνονται τα δόντια του.</p>
+  <p>Δεν έχει μύτη ούτε αυτιά ούτε μαλλιά.</p>
+  <p>&nbsp;</p>
+</div>
+</div>
+
+<div id="Paint" class="tabcontent">
+    <iframe src="https://ermis.dschool.edu.gr/preschool/paint/demo/"></iframe>
+</div>
+
+<div id="Result" class="tabcontent">
+  <h3>Αποτέλεσμα</h3>
+  <p>Εδώ φαίνονται πλάι-πλάι αυτό που ζωγράφισε ο μαθητής και το αποτέλεσμα που είχε στο νου το αυτός που έγραψε την ιστορία.</p>
+</div>
+
+<div class="footer">
+<img src="resource/bar_home.svg" class="bar">
+<img src="resource/bar_help.svg" class="bar">
+<img src="resource/bar_about.svg" class="bar">
+&nbsp;
+<audio controls style="vertical-align: middle; width: 50%">
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+&nbsp;
+<img src="resource/bar_previous.svg" class="bar">
+<p style="display: inline">#1 / 10</p>
+<img src="resource/bar_next.svg" class="bar">
+</div>
+<script>
+function openPage(pageName, elmnt, color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "Transparent";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = "#e6e6e6";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

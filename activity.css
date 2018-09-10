@@ -1,0 +1,131 @@
+/*
+Copyright (C) 2018 Alkis Georgopoulos <alkisg@gmail.com>.
+SPDX-License-Identifier: CC-BY-SA-4.0
+*/
+body, html  {
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    justify-content: space-around;
+    background: url('resource/background.svg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.tabsheader {
+    display: flex;
+    align-items: stretch;
+    margin: 0vw 2vw 0vw 2vw;
+}
+
+.tablink {
+    flex-grow: 1;
+    border: none;
+    border-radius: 1vw 1vw 0vw 0vw;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5vw;
+    text-align: center;
+}
+
+.tablink:hover {
+    background-color: #f0f0f0;
+}
+
+.tabcontent {
+    background-color: white;
+    border: 0.5vw solid #e6e6e6;
+    border-radius: 1vw;
+    clear: both;  /* Tabs float, content should go below */
+    overflow: hidden;
+    display: none;
+    padding: 1vw;
+    margin: 0;
+    flex: 1;
+}
+
+iframe {
+    overflow-y: scroll;
+	  border: none;
+    height: 100%;
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    font-size: 3vw;
+    margin: 0vw 0vw 1vw 0vw;
+}
+
+.bar {
+    cursor: pointer;
+    border: 0.2vw solid transparent;
+    vertical-align: middle;
+    height: 6vw;
+}
+
+.bar:hover {
+    border: 0.2vw solid skyblue;
+}
+
+#narration {
+    border: 0.2vw solid transparent;
+    width: 30vw;
+    /* height: 6vw; /* Audio controls don't support height */
+    vertical-align: middle;
+    margin-left: 0.5vw;
+}
+
+.fhp /* Flex Horizontal Parent */
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+}
+
+.fhc /* Flex Horizontal Child */
+{
+    flex: 1;
+}
+
+.fvp /* Flex Vertical Parent */
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.fvc /* Flex Vertical Child */
+{
+    flex: 1;
+}
+
+#paint { overflow: hidden;
+    border: 0.5vw solid #e6e6e6;
+    border-radius: 1vw;
+}
+
+#description {
+}
+
+#monster {
+    background: white url('resource/monster0.svg') no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    box-sizing: border-box;
+    border: 1vw solid white;
+}
+
+#level {
+  display: inline
+}

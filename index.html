@@ -1,0 +1,50 @@
+<!doctype html>
+<!--
+Copyright (C) 2018 Alkis Georgopoulos <alkisg@gmail.com>.
+SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<html lang="el">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Ηχητική περιγραφή και νοερή εικόνα</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="activity.css">
+  <script src="activity.js"></script>
+</head>
+<body>
+<div class="fvc fhp">
+  <div class="fhc" style="margin: 2vw 1vw 1vw 2vw" id="paint">
+    <iframe src="https://ermis.dschool.edu.gr/preschool/paint/demo/"></iframe>
+  </div>
+  <div class="fhc fvp" style="margin: 2vw 2vw 1vw 1vw">
+    <div class="tabsheader">
+      <a id="defaultOpen" class="tablink"
+         onclick="openPage('description', this)">Περιγραφή</a>
+      <a class="tablink"
+         onclick="openPage('monster', this)">Εικόνα</a>
+    </div>
+    <div id="description" class="tabcontent"></div>
+    <div id="monster" class="tabcontent">
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <img src="resource/bar_home.svg" class="bar" onclick="onMenuHome(event)">
+  <img src="resource/bar_help.svg" class="bar" onclick="onMenuHelp(event)">
+  <img src="resource/bar_about.svg" class="bar" onclick="onMenuAbout(event)">
+  <audio id="narration" controls src="resource/narration0.mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <img src="resource/bar_previous.svg" class="bar"
+       onclick="onMenuPrevious(event)">
+  <p id="level">#0 / 15</p>
+  <img src="resource/bar_next.svg" class="bar" onclick="onMenuNext(event)">
+</div>
+<script>
+  initLevel(0);
+
+
+
+</script>
+</body>
+</html>
