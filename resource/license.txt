@@ -1,8 +1,9 @@
-Copyright: 2018 Georgios Piskopanis, Artemis Georgopoulou
+Copyright: 2018 Artemis Georgopoulou, Georgios Piskopanis
 License: CC BY-NC-SA 4.0
 Files:
 background.svg
 bar_about.svg
+bar_fullscreen.svg
 bar_help.svg
 bar_home.svg
 bar_next.svg
@@ -23,7 +24,7 @@ monster12.svg
 monster13.svg
 monster14.svg
 
-Copyright: 2018 Iro Voulgari
+Copyright: 2018 Andromachi Filippidi, Iro Voulgari
 License: CC BY-NC-SA 4.0
 Files:
 narration0.mp3
