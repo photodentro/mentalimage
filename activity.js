@@ -91,7 +91,7 @@ function onNext(event) {
 
 function initLevel(newLevel) {
   act.level = (newLevel + act.numLevels) % act.numLevels;
-  ge('level').innerHTML = '#' + (act.level+1) + ' / 15';
+  ge('level').innerHTML = act.level+1;
   ge('defaultOpen').click();
   ge('narration').src = 'resource/narration' + act.level + '.mp3';
   ge('description').innerHTML = act.descriptions[act.level];
